@@ -6,7 +6,7 @@
   <title>Clientflow — Premium onboarding for professional services firms</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
@@ -20,7 +20,6 @@
         <span class="nav__sep" aria-hidden="true">·</span>
         <a href="#pricing">Pricing</a>
       </nav>
-      <a href="#score" class="btn btn--primary">See what your onboarding could look like →</a>
       <button type="button" class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay" id="nav-toggle">
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
@@ -31,7 +30,6 @@
       <a href="#how">How it works</a>
       <a href="#who">Who it's for</a>
       <a href="#pricing">Pricing</a>
-      <a href="#score" class="btn btn--primary">See what your onboarding could look like →</a>
     </div>
   </header>
 
@@ -50,58 +48,10 @@
           <span class="hero__headline-line">Your onboarding isn't.</span>
         </h1>
         <p class="hero__sub">Six disconnected tools, forty emails, and twelve days — to onboard a client who signed in an afternoon.</p>
-        <div class="hero__cta-wrap">
-          <a href="#score" class="btn btn--primary btn--large">See what your onboarding could look like →</a>
-        </div>
         <p class="hero__trust">Used by firms doing premium work who were tired of onboarding like it's 2012.</p>
         <div class="hero__card">
-          <div class="hero-card">
-            <div class="hero-card__top">
-              <span class="hero-card__logo">Clientflow</span>
-              <span class="hero-card__label">Dashboard</span>
-              <div class="hero-card__search">
-                <span class="hero-card__search-placeholder">Search</span>
-              </div>
-            </div>
-            <div class="hero-card__body">
-              <aside class="hero-card__sidebar">
-                <span class="hero-card__nav-item">Clients</span>
-                <span class="hero-card__nav-item">Documents</span>
-                <span class="hero-card__nav-item hero-card__nav-item--active">Intake</span>
-                <span class="hero-card__nav-item">Reports</span>
-              </aside>
-              <div class="hero-card__main">
-                <h3 class="hero-card__panel-title">
-                  <span class="hero-card__dot hero-card__dot--green"></span>
-                  Active Onboardings
-                </h3>
-                <div class="hero-card__rows">
-                  <div class="hero-card__row">
-                    <span class="hero-card__name">Mitchell & Co</span>
-                    <span class="hero-card__badge hero-card__badge--green">Signed ✓</span>
-                    <span class="hero-card__time">1.8 days</span>
-                  </div>
-                  <div class="hero-card__row">
-                    <span class="hero-card__name">Patel LLP</span>
-                    <span class="hero-card__badge hero-card__badge--amber">Contract sent</span>
-                    <span class="hero-card__time">14 hrs</span>
-                  </div>
-                  <div class="hero-card__row">
-                    <span class="hero-card__name">Turner & Clarke</span>
-                    <span class="hero-card__badge hero-card__badge--violet">Portal active</span>
-                    <span class="hero-card__time">2 days</span>
-                  </div>
-                </div>
-                <div class="hero-card__stats">1.8 days avg · 94 hrs saved · £28,200 recovered</div>
-              </div>
-              <aside class="hero-card__recent">
-                <h4 class="hero-card__recent-title">Recent Documents</h4>
-                <div class="hero-card__doc hero-card__doc--violet">Engagement letter</div>
-                <div class="hero-card__doc hero-card__doc--teal">Scope of work</div>
-                <div class="hero-card__doc hero-card__doc--green">Intake form</div>
-                <div class="hero-card__doc hero-card__doc--coral">Project brief</div>
-              </aside>
-            </div>
+          <div class="hero-card hero-card--image">
+            <img src="assets/hero-dashboard.png" alt="Clientflow dashboard — pipeline, recent clients, and quick stats" class="hero-card__img" width="1200" height="800" loading="eager" fetchpriority="high">
           </div>
         </div>
       </div>
@@ -132,48 +82,61 @@
     </section>
 
     <section class="act act--1 reveal-group" id="how">
-      <span class="particle particle--triangle particle--tr" aria-hidden="true"></span>
-      <span class="particle particle--star particle--bl" aria-hidden="true"></span>
-      <div class="act__inner">
-        <div class="act__text act__text--left">
+      <div class="act__inner act--1__inner">
+        <div class="act--1__copy">
           <span class="eyebrow-pill reveal">Understanding the problem</span>
-          <h2 class="section-h2 act__heading reveal">If this sounds familiar, you're not alone.</h2>
-          <p class="act__body reveal">These aren't edge cases. They're Tuesday morning for most professional services firms.</p>
-          <div class="pain-cards">
-            <blockquote class="pain-card reveal">"We just signed a new client and I'm about to attach a Word document to an email."</blockquote>
-            <blockquote class="pain-card reveal">"Someone asked me where the Henderson onboarding is at. I had to check three places."</blockquote>
-            <blockquote class="pain-card reveal">"Our client got emails from DocuSign, Stripe, and us in the same hour. It looked chaotic."</blockquote>
-            <blockquote class="pain-card reveal">"We spent most of Tuesday morning chasing documents from a client who signed two weeks ago."</blockquote>
-            <blockquote class="pain-card reveal">"Getting a contract signed still involves a printer somewhere in this building."</blockquote>
+          <h2 class="act--1__headline reveal">If this sounds familiar, you're not alone.</h2>
+          <p class="act--1__intro reveal">These aren't edge cases. They're Tuesday morning for most professional services firms.</p>
+          <div class="act--1__hero-quote reveal">
+            <span class="act--1__quote-mark" aria-hidden="true">"</span>
+            <p class="act--1__hero-quote-text">We just signed a new client and I'm about to attach a Word document to an email.</p>
           </div>
-          <p class="act__transition reveal">None of these are signs of a bad firm. They're signs of a firm that outgrew its infrastructure.</p>
+          <div class="act--1__more-quotes reveal">
+            <p class="act--1__more-label">Sound familiar?</p>
+            <ul class="act--1__quote-list" role="list">
+              <li>Someone asked me where the Henderson onboarding is at. I had to check three places.</li>
+              <li>Our client got emails from DocuSign, Stripe, and us in the same hour. It looked chaotic.</li>
+              <li>We spent most of Tuesday morning chasing documents from a client who signed two weeks ago.</li>
+              <li>Getting a contract signed still involves a printer somewhere in this building.</li>
+            </ul>
+          </div>
+          <p class="act--1__transition reveal">None of these are signs of a bad firm. They're signs of a firm that outgrew its infrastructure.</p>
         </div>
-        <div class="act__card-wrap">
-          <div class="card-feature-section before-after-card reveal">
-            <div class="before-after-card__header">
-              <span class="before-after-card__pill before-after-card__pill--red">Before Clientflow</span>
-              <span class="before-after-card__pill before-after-card__pill--green">After Clientflow</span>
+        <div class="act--1__compare reveal">
+          <div class="compare-card">
+            <div class="compare-card__tabs">
+              <span class="compare-card__tab compare-card__tab--before">Before</span>
+              <span class="compare-card__tab compare-card__tab--after">After Clientflow</span>
             </div>
-            <div class="before-after-card__grid">
-              <div class="before-after-card__col before-after-card__col--left">
-                <span>8–12 days</span>
-                <span>4 tools</span>
-                <span>Manual docs</span>
-                <span>Email chasing</span>
-                <span>Fragmented comms</span>
-                <span>No visibility</span>
+            <div class="compare-card__table" role="table">
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">8–12 days</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1.8 days</span></span>
               </div>
-              <div class="before-after-card__divider" aria-hidden="true"></div>
-              <div class="before-after-card__col before-after-card__col--right">
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1.8 days</span>
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 system</span>
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Auto-generated</span>
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Zero chasing</span>
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>One branded thread</span>
-                <span><svg class="before-after-card__check" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Live status — 4 seconds</span>
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">4 tools</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 system</span></span>
+              </div>
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">Manual docs</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Auto-generated</span></span>
+              </div>
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">Email chasing</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Zero chasing</span></span>
+              </div>
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">Fragmented comms</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One branded thread</span></span>
+              </div>
+              <div class="compare-card__row" role="row">
+                <span class="compare-card__cell compare-card__cell--before">No visibility</span>
+                <span class="compare-card__cell compare-card__cell--after"><svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Live status — 4 seconds</span></span>
               </div>
             </div>
-            <div class="before-after-card__stat">£3,750 saved in admin · £4,000 in recovered billing</div>
+            <div class="compare-card__footer">
+              <span class="compare-card__stat">£3,750</span> saved in admin · <span class="compare-card__stat">£4,000</span> in recovered billing
+            </div>
           </div>
         </div>
       </div>
