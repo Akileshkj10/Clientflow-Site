@@ -1,7 +1,7 @@
-# Clientflow — Product Requirements Document
-**Version:** 4.0 — GravityWrite-Inspired**  
+# ClientFlow — Product Requirements Document
+**Version:** 4.1 — IFA/RIA content pivot  
 **Design reference:** GravityWrite.com (gravitywrite.com)  
-**Output:** Single-page responsive marketing website for Clientflow agency
+**Output:** Single-page responsive marketing website for ClientFlow AI (wealth management onboarding for IFAs and RIAs)
 
 ---
 
@@ -59,15 +59,15 @@ Before any build decisions, understand exactly what GravityWrite does visually a
 
 ---
 
-## 1. Clientflow Adaptation
+## 1. ClientFlow Adaptation
 
-We take GravityWrite's design system and apply it precisely to Clientflow's content and agency context. Same visual language. Same structural patterns. Clientflow's copy and purpose.
+We take GravityWrite's design system and apply it precisely to ClientFlow's content and IFA/RIA context. Same visual language. Same structural patterns. ClientFlow's copy and purpose.
 
 **What changes from GravityWrite:**
-- Accent colour: **deep violet #5B21B6** (slightly more premium than GravityWrite's brighter purple — suits a professional services agency)
-- No product screenshots (Clientflow is an agency, not a SaaS tool). Instead: styled UI mockup cards that show the onboarding process — clean, minimal, text-based data cards.
-- Copy is all from the Clientflow content brief.
-- Logo: "Clientflow" wordmark, no icon needed initially.
+- Accent colour: **deep violet #5B21B6** (slightly more premium than GravityWrite's brighter purple — suits wealth management / IFA positioning)
+- Product UI: styled dashboard mockup cards that show the onboarding pipeline — clean, minimal, text-based data cards (or screenshot when available).
+- Copy follows Content Strategy §1.5 (IFA/RIA pivot).
+- Logo: "ClientFlow" wordmark (capital F), no icon needed initially.
 
 **What stays identical:**
 - White base throughout
@@ -78,6 +78,32 @@ We take GravityWrite's design system and apply it precisely to Clientflow's cont
 - Floating decorative particles
 - Soft-shadow rounded cards
 - Dark footer
+
+---
+
+## 1.5 Content Strategy — IFA/RIA Pivot (Current)
+
+**Effective:** As of site content update. Replaces prior "professional services" positioning.
+
+**Audience:** Small independent financial advisory (IFA) firms in the UK and Registered Investment Advisor (RIA) firms in the US. Principals, advisors, and paraplanners. Not generic professional services or other verticals.
+
+**Messaging principles:**
+- **Outcome-first:** Lead with time saved (under 3 hours, 20 min review), compliance confidence (Consumer Duty, FCA/SEC), and one connected flow — not "AI" or "automation."
+- **Jargon as trust:** Use IFA/RIA terms: suitability report, fact-find, Consumer Duty, KYC/AML, Copilot, COBS 9.4.1, Wealthbox, Intelliflo. Signals we are built for this audience.
+- **Specificity:** Use PRD stats: 12–15 hours → under 3; 4–6 hrs per suitability → 20 min review; 8–10 tools → 1 system; 70% lose clients to slow onboarding; 84% of small firms with no onboarding software.
+- **Risk reversal:** Emphasise "you approve every draft" (Copilot), "you stay author of the advice," "PI-friendly," "no client-facing AI."
+- **Primary CTA:** "Book a demo" (not "Score my onboarding" as primary). Demo positions the product; optional secondary remains score/assessment if retained elsewhere.
+
+**What changed from v4.0:**
+- **Hero:** From generic "Your work is exceptional. Your onboarding isn't" → "From first meeting to fully signed, FCA-compliant onboarding in under 3 hours." Eyebrow: "For UK IFAs and US RIAs." Trust line: Consumer Duty and SEC-ready.
+- **Nav/Footer:** "How it works" / "Who it's for" → "The problem" / "How it works." CTA: "Score my onboarding" → "Book a demo."
+- **Brand strip:** "Professional services firms across the UK" → "Built for small IFA and RIA firms — FCA and SEC in mind from day one." Marquee names updated to IFA-style (e.g. Mitchell Wealth, Patel Financial Planning).
+- **Act 1 (Problem):** Pain points and compare card rewritten for IFA workflow: 12–15 hours, 8–10 tools, 4–6 hrs per suitability, re-entry, Consumer Duty, CRM sync. Compare: 12–15 hrs → under 3 hrs; 4–6 hrs suitability → 20 min review; meeting populates fact-find; Consumer Duty audit trail; Wealthbox/Intelliflo sync. Footer stat: £1,500+ saved per month (4 reports), ~10 hrs for 30 annual reviews.
+- **Act 2 (Transformation):** Pairings and headline updated. "One connected chain" / "Not a CRM. Not a report writer. The operating layer." Four pairings: meeting → fact-find; suitability from connected data + Copilot; Consumer Duty evidence; annual review in ~20 min.
+- **Cost section:** Headline "Onboarding that pays for itself." Cards: (1) £567 saved per suitability report vs manual, (2) £1,468 saved per month (4 reports) vs Practitioner £199/mo, (3) 70% of firms lose clients to slow onboarding. Closer: Practitioner/Growth tiers, no enterprise pricing.
+- **Proof timeline:** "Under 3 hours" flow: portal → transcript + KYC → enrichment + suitability draft → Copilot approve → DocuSeal → CRM synced. Total &lt;3 hrs. CTA: Book a demo.
+- **Offer / Close:** "See how ClientFlow fits your practice." Book a demo; for UK IFAs and US RIAs; Practitioner £199/mo, Growth £399/mo. Close line: "Ready to onboard in under 3 hours instead of 12?"
+- **Footer:** Tagline "Compliance-grade onboarding for IFAs and RIAs. Under 3 hours, not 12." Logo "ClientFlow."
 
 ---
 
@@ -304,9 +330,9 @@ Transition: border 300ms ease.
 
 | Element | Spec |
 |---|---|
-| Logo | "Clientflow" — Plus Jakarta Sans 18px, weight 700, colour #111827. |
-| Nav links | "How it works · Who it's for · Pricing" — 14px, weight 500, #6B7280. Hover: #111827, 150ms. |
-| Right CTA | "See what your onboarding could look like →" — dark primary button. |
+| Logo | "ClientFlow" — Plus Jakarta Sans 18px, weight 700, colour #111827. |
+| Nav links | "The problem · How it works · Pricing" — 14px, weight 500, #6B7280. Hover: #111827, 150ms. |
+| Right CTA | "Book a demo →" — dark primary button (or same as footer outline). |
 | Mobile (<768px) | Hamburger (3 lines, #111827). Overlay: white full-screen. Links stacked. Same CTA. |
 
 ---
@@ -334,15 +360,15 @@ background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(124,58,237,0.07) 0%
 ```
 Background: #EDE9FE
 Border:     1px solid #DDD6FE
-Text:       "AI-powered onboarding systems" — 12px, weight 600, #5B21B6
+Text:       "For UK IFAs and US RIAs" — 12px, weight 600, #5B21B6
 Icon:       Small lightning or sparkle emoji/SVG before text
 Margin-bottom: 24px
 ```
 
 **Headline** (centred):
 ```
-Line 1: "Your work is exceptional."
-Line 2: "Your onboarding isn't."
+Line 1: "From first meeting to fully signed,"
+Line 2: "FCA-compliant onboarding in under 3 hours."
 
 Font:           Plus Jakarta Sans 68px desktop / 38px mobile
 Weight:         800
@@ -354,7 +380,7 @@ Margin-bottom:  20px
 
 **Sub-headline** (centred):
 ```
-"Six disconnected tools, forty emails, and twelve days — to onboard a client who signed in an afternoon."
+"One connected workflow for intake, fact-find, suitability reports and CRM — so you advise clients, not spreadsheets. Compliance-grade. No enterprise price tag."
 Font:       Plus Jakarta Sans 18px
 Weight:     400
 Colour:     #6B7280
@@ -365,14 +391,14 @@ Margin-bottom: 32px
 
 **CTA** (centred):
 ```
-Single primary button: "See what your onboarding could look like →"
+Single primary button: "Book a demo →" (or "See how it works" as alternate)
 Style: dark primary (#111827 bg, white text)
 Size:  large — padding 14px 32px, font-size 15px
 ```
 
 **Trust line** (centred, below button):
 ```
-"Used by firms doing premium work who were tired of onboarding like it's 2012."
+"Consumer Duty and SEC-ready. Built for small firms that can't afford compliance gaps."
 Font: 13px, weight 400, colour #9CA3AF
 Margin-top: 16px
 ```
@@ -388,7 +414,7 @@ Overflow:      hidden (clips inner content cleanly)
 
 Contents — a styled onboarding dashboard mockup:
   Show a clean, minimal UI card with:
-  - Top bar: "Clientflow" logo left, "Dashboard" label, search bar right
+  - Top bar: "ClientFlow" logo left, "Dashboard" label, search bar right
   - Left sidebar: small nav items — Clients, Documents, Intake, Reports
   - Main panel:
       Heading: "Active Onboardings" with a green dot
@@ -422,16 +448,16 @@ Border-bottom: 1px solid #F3F4F6
 
 **Label** (centred, above logos):
 ```
-"Trusted by professional services firms across the UK"
-Font: 13px, weight 500, letter-spacing 0.03em, ALL CAPS, colour #9CA3AF
+"Built for small IFA and RIA firms — FCA and SEC in mind from day one"
+Font: 13px, weight 500, letter-spacing 0.03em, colour #9CA3AF
 Margin-bottom: 24px
 ```
 
 **Logo marquee** (infinite scroll, no pause):
 ```
-Since Clientflow is new, use placeholder firm-type names styled as wordmarks:
-  "Mitchell & Co"   "Patel LLP"   "Turner Clarke"   "Morrison Partners"
-  "Henderson Law"   "Webb Advisory"   "Sinclair & Reid"   "Okafor Group"
+Placeholder IFA/RIA-style firm names as wordmarks:
+  "Mitchell Wealth"   "Patel Financial Planning"   "Turner Clarke IFA"   "Morrison Partners"
+  "Henderson Advisory"   "Webb & Co"   "Sinclair & Reid"   "Okafor Wealth"
 
 Each name: Plus Jakarta Sans 15px, weight 600, colour #D1D5DB
 Styled as greyscale wordmarks, 200px min-width each, centred text.
@@ -458,33 +484,23 @@ Position:     relative (for particles)
 **Left column — text:**
 
 ```
-Eyebrow pill: "Understanding the problem"
-Heading:      "If this sounds familiar, you're not alone."
+Eyebrow pill: "The onboarding trap"
+Heading:      "Why onboarding burns 12+ hours per client."
               Plus Jakarta Sans 40px, weight 700, -0.02em, #111827
-Body:         "These aren't edge cases. They're Tuesday morning for most professional services firms."
+Body:         "Most small IFA and RIA firms use 8–10 different tools. Same data, entered again and again. Suitability reports alone take 4–6 hours each."
               17px, #6B7280, line-height 1.65
 
-Then: five pain statements rendered as a stack of mini-cards:
-  Each mini-card:
-    background: #F9FAFB
-    border: 1px solid #E5E7EB
-    border-left: 3px solid #5B21B6
-    border-radius: 8px
-    padding: 14px 18px
-    font-size: 15px
-    font-style: italic
-    color: #374151
-    margin-bottom: 10px
+Hero quote (first mini-card):
+  1. "We just signed a new client. I'm about to re-key their fact-find into three different systems."
 
-The five quotes in exact order:
-  1. "We just signed a new client and I'm about to attach a Word document to an email."
-  2. "Someone asked me where the Henderson onboarding is at. I had to check three places."
-  3. "Our client got emails from DocuSign, Stripe, and us in the same hour. It looked chaotic."
-  4. "We spent most of Tuesday morning chasing documents from a client who signed two weeks ago."
-  5. "Getting a contract signed still involves a printer somewhere in this building."
+Then: four more pain statements as mini-cards:
+  2. "Someone asked where the Henderson suitability is at. I had to check the CRM, the paraplanner's drive, and my inbox."
+  3. "Consumer Duty added more evidence and record-keeping. We're still catching up."
+  4. "Four to six hours per suitability report. Annual reviews repeat that for every client, every year."
+  5. "70% of firms say they lose clients to slow onboarding. Our process shouldn't be the bottleneck."
 
 Transition line below cards:
-  "None of these are signs of a bad firm. They're signs of a firm that outgrew its infrastructure."
+  "None of these mean you're a bad firm. They mean you've outgrown a fragmented, manual setup."
   13px, italic, #9CA3AF
 ```
 
@@ -497,22 +513,22 @@ A styled card showing the contrast:
   Background: white
 
   Contents:
-    Header: "Before Clientflow" in red-tinted pill vs "After Clientflow" in green-tinted pill
+    Header: "Before" in red-tinted pill vs "After ClientFlow" in green-tinted pill
     — two column layout inside card —
 
-    LEFT (faded, grey):       RIGHT (full colour, crisp):
-    8–12 days                 1.8 days
-    4 tools                   1 system
-    Manual docs               Auto-generated
-    Email chasing             Zero chasing
-    Fragmented comms          One branded thread
-    No visibility             Live status — 4 seconds
+    LEFT (faded, grey):              RIGHT (full colour, crisp):
+    12–15 hours                     Under 3 hours
+    8–10 tools                      1 system
+    4–6 hrs per suitability         20 min advisor review
+    Manual fact-find re-entry       Meeting populates fact-find
+    Compliance evidence scattered   Consumer Duty audit trail
+    CRM out of sync                 Wealthbox / Intelliflo sync
 
     Each row: left in #9CA3AF / right in #111827 with a green checkmark icon
     Divider: 1px solid #E5E7EB down the middle
     
     Below the two columns:
-    A single stat strip: "£3,750 saved in admin · £4,000 in recovered billing" 
+    A single stat strip: "£1,500+ saved per month (4 reports) · ~10 hrs for 30 annual reviews"
     Background: #F0FDF4, border-radius 8px, green text, padding 12px 16px
 ```
 
@@ -546,38 +562,38 @@ Each row:
     Content: the "old world" scenario text, 14px, #9CA3AF, italic
 
   Right half (vivid):
-    Label: "Clientflow" in small violet pill
+    Label: "ClientFlow" in small violet pill
     Content: the solution text, 14px, #374151
 
 Pairing 1:
-  LEFT:  "Opening a template, changing the name, updating the fee, printing, signing, scanning."
-  RIGHT: "Intake submitted. Engagement letter built in 7 seconds. Ready before you open your laptop."
+  LEFT:  "I typed up the fact-find from my meeting notes. Again. Then copied it into the suitability template."
+  RIGHT: "Meeting recording uploaded. Transcript populates the fact-find. No re-entry — you review and enrich." [ClientFlow]
 
 Pairing 2:
-  LEFT:  "Three tools open. Still can't answer where the Morrison onboarding stands."
-  RIGHT: "One screen. Every client. Live stage visible in 4 seconds."
+  LEFT:  "Suitability report from a blank prompt. I had to rewrite half of it to match the actual client data."
+  RIGHT: "Draft generated from connected fact-find and your recommendation. COBS 9.4.1 structure. You approve before it's sent." [ClientFlow]
 
 Pairing 3:
-  LEFT:  "Client got DocuSign, Stripe, and your email in the same hour. Looks like 3 companies."
-  RIGHT: "Everything in one branded thread. From you, as you. Client sees nothing but your firm."
+  LEFT:  "FCA asked for our Consumer Duty evidence. We had to hunt across drives and emails."
+  RIGHT: "Evidence chain built into every interaction. Plain-language summaries, confirmations and audit trail — ready for review." [ClientFlow]
 
 Pairing 4:
-  LEFT:  "Day 8. Still waiting on three documents. Someone will try calling today."
-  RIGHT: "Auto-reminders at Day 2, 5, 10. Team involved only when the document arrives."
+  LEFT:  "Annual review season: 30 clients, 30 suitability reports. Weeks of paraplanning and chasing."
+  RIGHT: "Delta fact-find, delta report. Same workflow — about 20 minutes review per client instead of hours." [ClientFlow]
 ```
 
 **Right column — text:**
 ```
-Eyebrow pill: "The transformation"
-Heading:      "Every one of these has a specific fix."
+Eyebrow pill: "One connected chain"
+Heading:      "Not a CRM. Not a report writer. The operating layer."
               40px, weight 700, -0.02em, #111827
-Sub-heading:  "None of them require more effort from your team."
+Sub-heading:  "Intake, compliance, suitability and CRM — in one flow."
               20px, weight 600, #111827, margin-bottom 16px
-Body:         "Clientflow builds the entire system — intake, documents, communications,
-               reminders, and visibility — so your firm runs like a premium operation
-               from day one."
+Body:         "ClientFlow connects client portal, meeting transcription, KYC, AI-assisted suitability
+               drafts and your existing CRM. Data is captured once. You stay the author of the advice —
+               every draft goes through your Copilot review before anything is sent."
               17px, #6B7280, line-height 1.65
-Ghost CTA:    "See how it works →"  — violet ghost link style
+Ghost CTA:    "Book a demo →"  — violet ghost link style
 ```
 
 ---
@@ -593,9 +609,9 @@ Layout:       Single column heading, then 3-column card grid. Max-width 1100px c
 **Section heading block** (centred):
 ```
 Eyebrow pill: "The real numbers"
-Heading:      "Bad onboarding has a cost. Most firms just haven't calculated it."
+Heading:      "Onboarding that pays for itself."
               48px, weight 700, -0.02em, #111827, max-width 700px, centred
-Sub:          "These aren't worst-case numbers. They're what happens in an average month at an average firm."
+Sub:          "Industry figures. Use them in your own planning — not as marketing claims."
               18px, #6B7280, centred, max-width 560px
 ```
 
@@ -617,47 +633,47 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 /* Hover: translateY(-4px), shadow deepens */
 ```
 
-**Card 1 — Unbillable Admin:**
+**Card 1 — Suitability report saving:**
 ```
-Icon block:   Violet rounded square, clock/time icon inside (white icon)
+Icon block:   Violet rounded square, clock/time icon
               48px × 48px, background #EDE9FE, border-radius 12px
-Big number:   "£3,750" — 48px, weight 800, colour #5B21B6. Count-up on scroll.
-Label:        "per month in unbillable admin" — 16px, weight 600, #111827
-Body:         "5 hours per client × 10 clients × £75/hr = time your senior staff spent
-               generating no revenue."
+Big number:   "£567" — 48px, weight 800, colour #5B21B6. Count-up on scroll.
+Label:        "saved per suitability report (vs manual)" — 16px, weight 600, #111827
+Body:         "Manual: 4–6 hours at £100/hr = £400–600 per report. With ClientFlow: ~20 min
+               advisor review ≈ £33. Saving £367–567 per report."
               15px, #6B7280, line-height 1.65
-Footnote:     "Assuming an ordinary firm, not an inefficient one." — 13px, italic, #9CA3AF
+Footnote:     "Based on typical advisor time cost." — 13px, italic, #9CA3AF
 ```
 
-**Card 2 — Deferred Billing:**
+**Card 2 — Monthly saving (4 reports):**
 ```
 Icon block:   48px × 48px, background #FEF3C7, border-radius 12px, amber calendar icon
-Big number:   "£4,000" — 48px, weight 800, colour #D97706. Count-up on scroll.
-Label:        "per month in deferred billing" — 16px, weight 600, #111827
-Body:         "A 10-day onboarding vs 48 hours means your first invoice is 8 days late.
-               Across 5 new clients: £4,000 sitting in a queue that didn't need to exist."
+Big number:   "£1,468" — 48px, weight 800, colour #D97706. Count-up on scroll.
+Label:        "saved per month (4 reports) vs manual" — 16px, weight 600, #111827
+Body:         "Four suitability reports per month: manual cost £1,600–2,400 in advisor time.
+               ClientFlow Practitioner tier £199/mo — net saving £1,468+ before deferred billing."
               15px, #6B7280, line-height 1.65
-Footnote:     "Late revenue is a real cashflow cost." — 13px, italic, #9CA3AF
+Footnote:     "Outsourced paraplanning £150–250/report adds up faster." — 13px, italic, #9CA3AF
 ```
 
-**Card 3 — Invisible Churn:**
+**Card 3 — Client loss / retention:**
 ```
 Icon block:   48px × 48px, background #FEE2E2, border-radius 12px, red warning icon
-Big number:   "40%" — 48px, weight 800, colour #DC2626. Count-up on scroll.
-Label:        "of clients form their lasting impression during onboarding" — 16px, weight 600, #111827
-Body:         "Before any real work is delivered. If that experience is fragmented or slow,
-               the relationship starts with doubt. You won't see it in your churn data — but it started here."
+Big number:   "70%" — 48px, weight 800, colour #DC2626. Count-up on scroll.
+Label:        "of firms lose clients to slow onboarding" — 16px, weight 600, #111827
+Body:         "When onboarding drags, clients doubt the relationship before advice is delivered.
+               Faster, compliant onboarding protects retention and referrals."
               15px, #6B7280, line-height 1.65
 ```
 
 **Below cards — combined line:**
 ```
-"£3,750 in avoidable admin. £4,000 in deferred billing. An unknown number of relationships
- that started badly. None of these require a large firm to feel."
+"£1,500+ saved per month on suitability alone. Annual review season: 30 clients in ~10 hours
+ of advisor review instead of 120–180. No enterprise pricing."
 17px, #6B7280, centred, max-width 700px, margin-top 40px
 
 Followed by:
-"The question isn't whether bad onboarding costs money. It's whether you've been counting it."
+"Built for small firms. Practitioner and Growth tiers — so you advise clients, not administrate."
 18px, weight 600, #111827, centred
 ```
 
@@ -673,13 +689,13 @@ Layout:       Two column. Left 42% text, right 58% timeline card. Gap 64px. Max-
 
 **Left column — text:**
 ```
-Eyebrow pill: "A real onboarding"
-Heading:      "Start to finish. 1.8 days."
+Eyebrow pill: "One connected flow"
+Heading:      "First meeting to fully signed. Under 3 hours."
               40px, weight 700, #111827
-Body:         "Not a marketing scenario. A walkthrough of exactly what happens when
-               a new client submits your intake form."
+Body:         "Portal intake, meeting transcription, KYC, suitability draft and Copilot review —
+               then documents signed and CRM synced. No re-entry. No scattered tools."
               17px, #6B7280, line-height 1.65
-Ghost CTA:    "Score my onboarding →"
+Ghost CTA:    "Book a demo →"
 ```
 
 **Right column — timeline card:**
@@ -687,23 +703,23 @@ Ghost CTA:    "Score my onboarding →"
 Card: border-radius 16px, border 1px solid #E5E7EB, background white,
       box-shadow 0 20px 60px rgba(0,0,0,0.07), padding 32px
 
-Timeline rows — 7 items, 130ms stagger on scroll:
+Timeline rows — 7 items, 130ms stagger on scroll. IFA onboarding flow:
 
 Each row:
-  Left:   timestamp — 12px, weight 600, #5B21B6, font-variant-numeric: tabular-nums, min-width 100px
+  Left:   timestamp (e.g. T+0, T+15 min) — 12px, weight 600, #5B21B6, font-variant-numeric: tabular-nums
   Centre: vertical connector line — 1px, #E5E7EB, with a small violet dot at each node
   Right:  event text — 14px, #374151, line-height 1.5
 
 Items:
-  14:22, 26 Feb  →  Sarah Mitchell submits intake. 9 answers.
-  14:22:07       →  Lead scored 9/10. Document generation begins.
-  14:22:14       →  4 documents complete — brief, scope, engagement letter, task list.
-  14:28          →  Reviewed, approved, sent.
-  14:35          →  Sarah receives everything in one branded thread.
-  1 March        →  Contract signed. Invoice paid. Portal active.
-  Total: 1.8 days → The work didn't change. The system around it did.
+  T+0        →  Client completes branded portal. Fact-find submitted. Meeting recording uploaded (optional).
+  T+15 min   →  Transcript extracted. Fact-find pre-populated. KYC/AML initiated (Thirdfort/Credas).
+  T+45 min   →  KYC passed. Advisor enriches fact-find, enters recommendation. Suitability Agent drafts report from connected data.
+  T+1 hr 20  →  You review in Copilot. Approve. Report and fee disclosure sent to client.
+  T+2 hrs    →  Client signs via DocuSeal. Consumer Duty evidence logged.
+  T+3 hrs    →  CRM synced (Wealthbox/Intelliflo). Annual review timer set. Onboarding complete.
+  Total: <3 hrs → One system. One flow. You stay the author of the advice.
 
-Last row ("Total") styled differently:
+Last row ("Total: <3 hrs") styled differently:
   Background: #EDE9FE, border-radius 8px, padding 12px 16px
   Text: weight 700, #5B21B6
 ```
@@ -720,27 +736,27 @@ Layout:       Single column centred. Max-width 680px.
 
 **Heading:**
 ```
-"See where your onboarding is losing time."
+"See how ClientFlow fits your practice."
 48px, weight 800, -0.02em, #FFFFFF, centred
 ```
 
 **Body:**
 ```
-"Answer eight questions about how your firm currently onboards clients.
- We'll show you exactly where time is being lost, what it's costing,
- and what a Clientflow setup would look like for your specific practice."
+"Book a short demo. We'll walk through your current onboarding and suitability process,
+ show you the connected workflow — intake, meeting transcription, suitability draft and CRM sync —
+ and where time and compliance risk drop."
 18px, rgba(255,255,255,0.80), centred, max-width 560px
 ```
 
 **Framing:**
 ```
-"No call required. No credit card. Just eight questions and a clear picture."
+"For UK IFAs and US RIAs. No commitment. See the platform with your own workflow in mind."
 15px, rgba(255,255,255,0.60), centred
 ```
 
 **CTA button:**
 ```
-"Score my onboarding →"
+"Book a demo →"
 Background: #FFFFFF
 Text colour: #5B21B6
 Padding: 16px 40px, font-size 16px, weight 700, border-radius 10px
@@ -750,7 +766,7 @@ Centred. Large.
 
 **Trust line:**
 ```
-"If your onboarding is already working well, we'll tell you that too."
+"Practitioner from £199/mo. Growth with Annual Review and Vulnerability Radar from £399/mo."
 13px, rgba(255,255,255,0.50), centred, below button
 ```
 
@@ -766,13 +782,13 @@ Layout:       Single column centred.
 
 **Line:**
 ```
-"Still onboarding clients the way you did in 2018?"
+"Ready to onboard in under 3 hours instead of 12?"
 52px, weight 800, -0.02em, #111827, centred, max-width 700px
 ```
 
 **CTA:**
 ```
-"Score my onboarding →" — dark primary button, centred, large
+"Book a demo →" — dark primary button, centred, large
 ```
 
 ---
@@ -787,13 +803,13 @@ Layout:       Three columns, max-width 1200px. Bottom bar: full-width copyright.
 
 | Column | Content |
 |---|---|
-| Left | "Clientflow" — Plus Jakarta Sans 18px, weight 700, #FFFFFF. Below: "Premium onboarding for professional services firms." — 14px, #9CA3AF. |
-| Centre | Links: "How it works · Who it's for · Pricing · Privacy" — 14px, #9CA3AF, hover #FFFFFF, 150ms. |
-| Right | "Score my onboarding →" — outline white button (border 1px white, white text, transparent bg, 10px radius). |
+| Left | "ClientFlow" — Plus Jakarta Sans 18px, weight 700, #FFFFFF. Below: "Compliance-grade onboarding for IFAs and RIAs. Under 3 hours, not 12." — 14px, #9CA3AF. |
+| Centre | Links: "The problem · How it works · Pricing · Privacy" — 14px, #9CA3AF, hover #FFFFFF, 150ms. |
+| Right | "Book a demo →" — outline white button (border 1px white, white text, transparent bg, 10px radius). |
 
 **Bottom bar (border-top 1px solid #1F2937):**
 ```
-"© 2025 Clientflow. All rights reserved." — centred, 13px, #4B5563
+"© 2025 ClientFlow. All rights reserved." — centred, 13px, #4B5563
 ```
 
 ---
@@ -841,8 +857,8 @@ Layout:       Three columns, max-width 1200px. Bottom bar: full-width copyright.
 - [ ] `18` Offer section background is full violet #5B21B6 — white text throughout
 - [ ] `19` Offer CTA button is white with violet text
 - [ ] `20` Footer background is #111827 — links hover to white
-- [ ] `21` Primary CTA everywhere reads "Score my onboarding →" — not "Get started"
-- [ ] `22` Nav CTA reads "See what your onboarding could look like →"
+- [ ] `21` Primary CTA everywhere reads "Book a demo →" — not "Get started"
+- [ ] `22` Nav CTA reads "Book a demo →"
 - [ ] `23` All cards have border-radius 14–16px — rounded, not sharp
 - [ ] `24` Page load stagger fires in correct order: nav → pill → H1 → sub → CTA → card
 - [ ] `25` Scroll reveals working with 80ms stagger between siblings
