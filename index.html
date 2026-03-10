@@ -3,25 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClientFlow AI — Onboarding infrastructure for IFAs and RIAs</title>
+  <title>ClientFlow — Onboarding infrastructure for UK IFAs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-
   <header class="nav" id="nav" role="banner">
     <div class="nav__inner">
       <a href="#" class="nav__logo">ClientFlow</a>
       <nav class="nav__links" aria-label="Main">
-        <a href="#capabilities">Capabilities</a>
-        <span class="nav__sep" aria-hidden="true">·</span>
-        <a href="#problem">The problem</a>
+        <a href="#platform">Platform</a>
         <span class="nav__sep" aria-hidden="true">·</span>
         <a href="#how">How it works</a>
       </nav>
-      <a href="#demo" class="btn btn--primary nav__cta">Book a demo</a>
+      <a href="#cta" class="btn btn--primary nav__cta">Book a demo</a>
       <button type="button" class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay" id="nav-toggle">
         <span class="nav__toggle-bar"></span>
         <span class="nav__toggle-bar"></span>
@@ -29,16 +26,14 @@
       </button>
     </div>
     <div class="nav__overlay" id="nav-overlay" aria-hidden="true">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#problem">The problem</a>
+      <a href="#platform">Platform</a>
       <a href="#how">How it works</a>
-      <a href="#demo" class="btn btn--primary">Book a demo</a>
+      <a href="#cta" class="btn btn--primary">Book a demo</a>
     </div>
   </header>
 
   <main>
-
-    <!-- ====================== HERO ====================== -->
+    <!-- ── Hero ── -->
     <section class="hero">
       <div class="hero__bloom" aria-hidden="true"></div>
       <div class="hero__content">
@@ -47,31 +42,24 @@
             <svg class="eyebrow-pill__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
               <path d="M6 1L7.5 4.5L11 6L7.5 7.5L6 11L4.5 7.5L1 6L4.5 4.5L6 1Z" fill="currentColor"/>
             </svg>
-            For UK IFAs and US RIAs
+            Built for UK IFAs
           </span>
           <h1 class="hero__headline">
-            <span class="hero__headline-line">Your practice runs on advice.</span>
-            <span class="hero__headline-line">ClientFlow handles the rest.</span>
+            <span class="hero__headline-line">The onboarding</span>
+            <span class="hero__headline-line">infrastructure for</span>
+            <span class="hero__headline-line">advisory firms.</span>
           </h1>
-          <p class="hero__sub">Structured intake, AI meeting notes, compliant document generation with your approval, automated follow-ups and a guided client journey — connected into one infrastructure. Built for small advisory firms that take compliance seriously.</p>
-          <div class="hero__trust-badges">
-            <span class="hero__badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Consumer Duty &amp; FCA-ready
-            </span>
-            <span class="hero__badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              You approve every document
-            </span>
-            <span class="hero__badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="16 3 21 8 8 21"/><line x1="12" y1="15" x2="3" y2="7"/><line x1="3" y1="12" x2="3" y2="21"/><line x1="3" y1="21" x2="12" y2="21"/></svg>
-              Syncs with Intelliflo &amp; similar tools
-            </span>
-          </div>
+          <p class="hero__sub">From first meeting to signed engagement — client discovery, documentation, compliance and follow-up in one connected system. Built for how UK advisory firms actually work.</p>
+          <ul class="hero__micro-list" aria-label="Key benefits">
+            <li>Structured intake and AI meeting notes build the client picture before you start writing.</li>
+            <li>Suitability reports and compliance docs generated from your data — reviewed and approved by you.</li>
+            <li>KYC/AML, e-signatures and FCA evidence handled in one place. Synced with Intelliflo.</li>
+          </ul>
           <div class="hero__ctas">
-            <a href="#demo" class="btn btn--primary">Book a demo</a>
+            <a href="#cta" class="btn btn--primary">Book a demo</a>
             <a href="#how" class="link-ghost hero__cta-secondary">See how it works <span class="link-ghost__arrow">→</span></a>
           </div>
+          <p class="hero__trust">Consumer Duty ready. Built for advisory firms that can't afford compliance gaps.</p>
         </div>
         <div class="hero__right">
           <div class="hero__card">
@@ -79,7 +67,7 @@
               <div class="hero-card__header">Onboarding pipeline</div>
               <div class="hero-card__body">
                 <div class="hero-card__main">
-                  <img src="assets/hero-dashboard.png" alt="ClientFlow dashboard — onboarding pipeline and compliance status" class="hero-card__img" width="1200" height="800" loading="eager" fetchpriority="high">
+                  <img src="assets/hero-dashboard.png" alt="ClientFlow dashboard — onboarding pipeline with client stages, suitability status and compliance tracking" class="hero-card__img" width="1200" height="800" loading="eager" fetchpriority="high">
                 </div>
                 <div class="hero-card__side">Suitability drafts · Next review due</div>
               </div>
@@ -89,9 +77,10 @@
       </div>
     </section>
 
-    <!-- ====================== BRAND STRIP ====================== -->
+    <!-- ── Brand Trust Strip ── -->
     <section class="brand-strip reveal-group">
-      <p class="brand-strip__label reveal">Trusted by advisors at independent firms across the UK and US</p>
+      <p class="brand-strip__label reveal">Built for independent advisory firms — FCA compliant from day one</p>
+      <p class="brand-strip__subtitle reveal">Trusted by advisors at firms like</p>
       <div class="brand-strip__marquee reveal" aria-hidden="true">
         <div class="brand-strip__track">
           <span class="brand-strip__name">Mitchell Wealth</span>
@@ -112,269 +101,197 @@
           <span class="brand-strip__name">Okafor Wealth</span>
         </div>
       </div>
+      <div class="brand-strip__chips">
+        <span class="brand-strip__chip">End-to-end onboarding</span>
+        <span class="brand-strip__chip">Intelliflo &amp; Wealthbox synced</span>
+        <span class="brand-strip__chip">FCA compliant</span>
+      </div>
     </section>
 
-    <!-- ====================== CAPABILITIES ====================== -->
-    <section class="caps reveal-group" id="capabilities">
-      <div class="caps__inner">
-        <header class="caps__header">
-          <span class="eyebrow-pill reveal">What ClientFlow does</span>
-          <h2 class="caps__headline reveal">Six capabilities. One connected system.</h2>
-          <p class="caps__sub reveal">Not a report writer. Not a CRM plug-in. The operating layer that connects client discovery to signed, compliant onboarding — without the fragmentation.</p>
+    <!-- ── Platform — What You Get ── -->
+    <section class="platform reveal-group" id="platform">
+      <div class="platform__inner">
+        <header class="platform__header">
+          <span class="eyebrow-pill reveal">The platform</span>
+          <h2 class="platform__headline reveal">Everything your firm needs to onboard clients — without the patchwork.</h2>
         </header>
-        <div class="caps__grid">
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <div class="platform__grid">
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
             </div>
-            <h3 class="cap-card__title">Smart client intake</h3>
-            <p class="cap-card__body">Branded intake forms capture everything you need from the first interaction. Structured, complete, and directly connected to every step that follows — no re-entry, no missing fields chased later.</p>
+            <h3 class="platform__card-title">Structured client discovery</h3>
+            <p class="platform__card-body">Intake forms capture what you need before the first conversation. Clients fill in details on their own time — you start every meeting with context, not a blank page.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
             </div>
-            <h3 class="cap-card__title">AI meeting notes</h3>
-            <p class="cap-card__body">Upload any recording — in-person audio, video call, or phone. ClientFlow transcribes and structures it into meeting notes and client information automatically. Your discovery conversation becomes organised client data without a single keystroke.</p>
+            <h3 class="platform__card-title">AI meeting notes — any format</h3>
+            <p class="platform__card-body">Record in-person, phone or video meetings. ClientFlow transcribes, identifies key details and populates the fact-find automatically. No re-typing from handwritten notes or separate apps.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
-            <h3 class="cap-card__title">Document generation, your way</h3>
-            <p class="cap-card__body">Suitability letters, fee disclosures and compliance documents are generated from real client data — structured around your firm's standards. You review, edit and approve every draft before anything reaches a client. The advice is always yours.</p>
+            <h3 class="platform__card-title">Intelligent document generation</h3>
+            <p class="platform__card-body">Suitability reports, risk profiles and fee disclosures drafted from connected client data — structured to your firm's practices. You review, edit and approve every document before it reaches the client.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l1.5-1.5a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
             </div>
-            <h3 class="cap-card__title">Automated follow-ups</h3>
-            <p class="cap-card__body">Timely nudges keep clients moving and your team informed without manual chasing. Outstanding action prompts, annual review alerts and progress reminders fire automatically — nothing falls through between meetings.</p>
+            <h3 class="platform__card-title">Automated follow-ups</h3>
+            <p class="platform__card-body">Reminders, outstanding items and next steps are tracked and sent without manual chasing. Clients know exactly what's needed. Your team stays focused on advice, not admin.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
             </div>
-            <h3 class="cap-card__title">Guided client portal</h3>
-            <p class="cap-card__body">Your clients get one secure place — not a scatter of emails and links. Fact-find, KYC and identity verification (Thirdfort or Credas), document signing and data consent all happen inside, presented in a clear sequence. GDPR-compliant. Professionally presented.</p>
+            <h3 class="platform__card-title">Client portal — one place for everything</h3>
+            <p class="platform__card-body">A branded space where clients complete KYC/AML verification (Thirdfort, Credas), review documents and sign — with full data protection built in. No scattered emails, no confusion about what comes next.</p>
           </article>
-
-          <article class="cap-card reveal">
-            <div class="cap-card__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <article class="platform__card reveal">
+            <div class="platform__card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
             </div>
-            <h3 class="cap-card__title">FCA compliance &amp; practice sync</h3>
-            <p class="cap-card__body">Consumer Duty evidence and audit trail are captured on every interaction. Syncs with Intelliflo and similar practice management tools so your system of record stays current — no duplicate entry, no compliance gaps.</p>
+            <h3 class="platform__card-title">Synced with your practice tools</h3>
+            <p class="platform__card-body">Intelliflo, Wealthbox and similar practice management systems stay current. Bidirectional data sync means no double entry and no records falling out of date.</p>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ====================== PROBLEM ====================== -->
+    <!-- ── Problem — Sound Familiar? ── -->
     <section class="problem reveal-group" id="problem">
       <div class="problem__inner">
         <header class="problem__header">
-          <span class="eyebrow-pill reveal">Why this matters</span>
-          <h2 class="problem__headline reveal">Great advisors are buried in admin. It shouldn't be this way.</h2>
+          <span class="eyebrow-pill reveal">Sound familiar?</span>
+          <h2 class="problem__headline reveal">When onboarding is scattered, everyone feels it.</h2>
         </header>
-        <div class="problem__layout">
-          <div class="problem__left">
-            <div class="problem__quote reveal">
-              <svg class="problem__quote-mark" width="40" height="30" viewBox="0 0 40 30" fill="none" aria-hidden="true">
-                <path d="M0 30V18C0 7.2 6.4 1.6 19.2 0l1.6 3.2C13.6 4.8 9.6 8.2 8.4 13.6H16V30H0zm24 0V18C24 7.2 30.4 1.6 43.2 0l1.6 3.2C37.6 4.8 33.6 8.2 32.4 13.6H40V30H24z" fill="currentColor"/>
-              </svg>
-              <p class="problem__quote-text">We had a great discovery meeting. Then I spent three hours turning notes into a fact-find, writing a suitability report from scratch, and chasing the client for their ID. Same thing every time. Every client.</p>
-            </div>
-            <ul class="problem__pains reveal">
-              <li class="problem__pain">
-                <span class="problem__pain-dot" aria-hidden="true"></span>
-                <p>Every discovery call produces notes that sit in a separate app, disconnected from documentation. Converting them into a client record and a compliant report is entirely manual — every time.</p>
-              </li>
-              <li class="problem__pain">
-                <span class="problem__pain-dot" aria-hidden="true"></span>
-                <p>Suitability reports start from a blank page or a generic prompt. Hours of writing, referencing and editing for every client and every annual review — even when the underlying data is the same.</p>
-              </li>
-              <li class="problem__pain">
-                <span class="problem__pain-dot" aria-hidden="true"></span>
-                <p>KYC, Consumer Duty evidence and compliance records live across drives, inboxes and disconnected systems. When the regulator asks for evidence, the search begins across all of them.</p>
-              </li>
-            </ul>
-            <p class="problem__close reveal">The cost isn't just time — it's the client experience and the compliance risk that comes with doing it all manually.</p>
+        <div class="problem__cards">
+          <blockquote class="problem__card reveal">
+            <p class="problem__card-text">"We chased the client for the fact-find, then for ID, then for the signed documents. Three tools, three logins, three email threads."</p>
+          </blockquote>
+          <blockquote class="problem__card reveal">
+            <p class="problem__card-text">"I typed up the meeting notes, then copied them into the suitability template. Then typed them again into Intelliflo."</p>
+          </blockquote>
+          <blockquote class="problem__card reveal">
+            <p class="problem__card-text">"FCA asked for our Consumer Duty evidence. We spent a full day searching drives, emails and filing cabinets."</p>
+          </blockquote>
+        </div>
+        <p class="problem__transition reveal">ClientFlow replaces the scatter. One system — intake through to signed and synced.</p>
+
+        <div class="compare reveal">
+          <div class="compare__header">
+            <span class="compare__col-title compare__col-title--before">Today</span>
+            <span class="compare__col-title compare__col-title--after">With ClientFlow</span>
           </div>
-          <div class="problem__right reveal">
-            <div class="compare-card">
-              <div class="compare-card__tabs">
-                <span class="compare-card__tab compare-card__tab--before">Today</span>
-                <span class="compare-card__tab compare-card__tab--after">With ClientFlow</span>
-              </div>
-              <div class="compare-card__table" role="table">
-                <div class="compare-card__row" role="row">
-                  <span class="compare-card__cell compare-card__cell--before">Meeting notes typed up manually</span>
-                  <span class="compare-card__cell compare-card__cell--after">
-                    <svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Audio transcribed and structured automatically</span>
-                  </span>
-                </div>
-                <div class="compare-card__row" role="row">
-                  <span class="compare-card__cell compare-card__cell--before">Suitability reports start from blank docs</span>
-                  <span class="compare-card__cell compare-card__cell--after">
-                    <svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Drafted from real client data — you review and approve</span>
-                  </span>
-                </div>
-                <div class="compare-card__row" role="row">
-                  <span class="compare-card__cell compare-card__cell--before">Chasing clients for forms, ID and signatures</span>
-                  <span class="compare-card__cell compare-card__cell--after">
-                    <svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Client guided through a secure, branded portal</span>
-                  </span>
-                </div>
-                <div class="compare-card__row" role="row">
-                  <span class="compare-card__cell compare-card__cell--before">Compliance evidence scattered across tools</span>
-                  <span class="compare-card__cell compare-card__cell--after">
-                    <svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Consumer Duty audit trail built in automatically</span>
-                  </span>
-                </div>
-                <div class="compare-card__row" role="row">
-                  <span class="compare-card__cell compare-card__cell--before">Practice management tools out of sync</span>
-                  <span class="compare-card__cell compare-card__cell--after">
-                    <svg class="compare-card__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    <span>Intelliflo and similar tools always in sync</span>
-                  </span>
-                </div>
-              </div>
-              <div class="compare-card__footer">
-                One system. Zero re-entry. Your advice stays yours.
-              </div>
+          <div class="compare__body">
+            <div class="compare__row">
+              <span class="compare__cell compare__cell--before">Meeting notes typed up manually</span>
+              <span class="compare__cell compare__cell--after"><svg class="compare__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Audio transcribed and structured automatically</span>
+            </div>
+            <div class="compare__row">
+              <span class="compare__cell compare__cell--before">Suitability reports start from blank docs</span>
+              <span class="compare__cell compare__cell--after"><svg class="compare__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Drafted from real client data — you review and approve</span>
+            </div>
+            <div class="compare__row">
+              <span class="compare__cell compare__cell--before">Chasing clients for forms, ID and signatures</span>
+              <span class="compare__cell compare__cell--after"><svg class="compare__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Client guided through a secure, branded portal</span>
+            </div>
+            <div class="compare__row">
+              <span class="compare__cell compare__cell--before">Compliance evidence scattered across tools</span>
+              <span class="compare__cell compare__cell--after"><svg class="compare__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Consumer Duty audit trail built in automatically</span>
+            </div>
+            <div class="compare__row">
+              <span class="compare__cell compare__cell--before">Practice management tools out of sync</span>
+              <span class="compare__cell compare__cell--after"><svg class="compare__icon" width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Intelliflo and similar tools always in sync</span>
             </div>
           </div>
+          <div class="compare__footer">One connected system. Intake through to signed and synced.</div>
         </div>
       </div>
     </section>
 
-    <!-- ====================== HOW IT WORKS ====================== -->
-    <section class="flow reveal-group" id="how">
-      <div class="flow__inner">
-        <header class="flow__header">
+    <!-- ── How It Works ── -->
+    <section class="process reveal-group" id="how">
+      <div class="process__inner">
+        <header class="process__header">
           <span class="eyebrow-pill reveal">How it works</span>
-          <h2 class="flow__headline reveal">From first meeting to fully onboarded — in one connected flow.</h2>
-          <p class="flow__sub reveal">Every step feeds into the next. What the client completes in their portal becomes your data. What you record in a meeting becomes the foundation of the suitability report. Nothing is re-entered.</p>
+          <h2 class="process__headline reveal">Five steps. One connected flow.</h2>
+          <p class="process__sub reveal">Each step feeds the next. No re-typing, no switching systems, no chasing.</p>
         </header>
-
-        <div class="flow__steps">
-
-          <div class="flow__step reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">1</span>
-              <span class="flow__step-line" aria-hidden="true"></span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--client">Client</span>
-              <h3 class="flow__step-title">Discovery &amp; structured intake</h3>
-              <p class="flow__step-desc">The client receives a link to your branded portal and completes a structured fact-find at their own pace. No paper forms, no Word attachments. Their answers flow directly into your onboarding workflow — organised, complete and ready to use.</p>
+        <div class="process__steps">
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">1</span>
+            <div class="process__content">
+              <h3 class="process__title">Client completes intake</h3>
+              <p class="process__desc">Your client receives a branded intake form and fills it in before the meeting. Structured data is ready when you sit down — no blank pages, no back-and-forth.</p>
             </div>
           </div>
-
-          <div class="flow__step reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">2</span>
-              <span class="flow__step-line" aria-hidden="true"></span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--advisor">Advisor</span>
-              <h3 class="flow__step-title">Meeting notes, generated from any recording</h3>
-              <p class="flow__step-desc">Upload your discovery meeting recording — in-person audio, video call or phone. ClientFlow transcribes, identifies key client details and adds structured notes directly to the client profile. You review, enrich and confirm. Nothing to type from scratch.</p>
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">2</span>
+            <div class="process__content">
+              <h3 class="process__title">Meeting captured, fact-find populated</h3>
+              <p class="process__desc">Record the meeting — in person, phone or video. ClientFlow transcribes, extracts key details and populates the fact-find. You review and enrich before anything else moves.</p>
             </div>
           </div>
-
-          <div class="flow__step reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">3</span>
-              <span class="flow__step-line" aria-hidden="true"></span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--client">Client</span>
-              <h3 class="flow__step-title">KYC, identity &amp; data consent in the portal</h3>
-              <p class="flow__step-desc">Identity verification (Thirdfort or Credas) and data consent are completed inside the same client portal — in a clear step-by-step sequence. No separate links. No chasing. The results flow directly into the compliance record, ready for the regulator.</p>
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">3</span>
+            <div class="process__content">
+              <h3 class="process__title">Documents generated, you approve</h3>
+              <p class="process__desc">Suitability reports and compliance documents are drafted from connected client data, structured to your firm's practices. You edit and approve every document in Copilot before it goes anywhere.</p>
             </div>
           </div>
-
-          <div class="flow__step reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">4</span>
-              <span class="flow__step-line" aria-hidden="true"></span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--advisor">Advisor</span>
-              <h3 class="flow__step-title">Suitability documents drafted from real data</h3>
-              <p class="flow__step-desc">The suitability letter and compliance documentation are generated from the connected fact-find and your recommendation — structured around your firm's standards. Not a blank prompt. Not a template you fill in. A genuine first draft from the data you already have.</p>
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">4</span>
+            <div class="process__content">
+              <h3 class="process__title">Client completes KYC and signs</h3>
+              <p class="process__desc">Your client verifies identity through Thirdfort or Credas, reviews documents and signs — all in one branded portal. Consumer Duty evidence and audit trail are logged automatically.</p>
             </div>
           </div>
-
-          <div class="flow__step reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">5</span>
-              <span class="flow__step-line" aria-hidden="true"></span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--advisor">Advisor</span>
-              <h3 class="flow__step-title">You review, edit and approve</h3>
-              <p class="flow__step-desc">Every document passes through your review before anything is sent. Read it, adjust the language, override any section. ClientFlow drafts; you decide. Once approved, the report and fee disclosure go to the client. The advice is always yours.</p>
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">5</span>
+            <div class="process__content">
+              <h3 class="process__title">Practice systems updated</h3>
+              <p class="process__desc">Intelliflo, Wealthbox or your practice management system synced automatically. Annual review timer set. Onboarding complete — nothing left to chase.</p>
             </div>
           </div>
-
-          <div class="flow__step flow__step--last reveal">
-            <div class="flow__step-marker">
-              <span class="flow__step-num" aria-hidden="true">6</span>
-            </div>
-            <div class="flow__step-body">
-              <span class="flow__step-tag flow__step-tag--client">Client</span>
-              <h3 class="flow__step-title">Signed, evidenced and synced</h3>
-              <p class="flow__step-desc">The client signs digitally. Consumer Duty evidence is logged automatically. Intelliflo or your practice management tool is updated. The annual review is scheduled. Onboarding is complete — fully auditable, nothing missing, nothing scattered.</p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ====================== OFFER ====================== -->
-    <section class="offer reveal-group" id="demo">
+    <!-- ── Offer / CTA ── -->
+    <section class="offer reveal-group" id="cta">
       <div class="offer__inner">
-        <h2 class="offer__heading reveal">See it with your practice in mind.</h2>
-        <p class="offer__body reveal">Book a short call. We'll walk through your current process — intake, meeting notes, documents, follow-ups — and show exactly where ClientFlow removes the friction. No generic demo. Your workflow, your firm.</p>
-        <p class="offer__framing reveal">For UK IFAs and US RIAs. For principals, advisors and paraplanners.</p>
-        <a href="#demo" class="btn btn--offer reveal">Book a demo</a>
+        <h2 class="offer__heading reveal">See the full picture.</h2>
+        <p class="offer__body reveal">Book a short demo. We'll walk through how client discovery, documentation and compliance connect for your firm — and where the manual work drops out.</p>
+        <p class="offer__framing reveal">For UK IFAs. No commitment. See the platform with your own workflow in mind.</p>
+        <p class="offer__persona reveal">For principals, advisors and paraplanners.</p>
+        <a href="#cta" class="btn btn--offer reveal">Book a demo</a>
+        <p class="offer__trust reveal">Built for small advisory firms. No long contracts.</p>
       </div>
     </section>
 
-    <!-- ====================== CLOSE ====================== -->
+    <!-- ── Close ── -->
     <section class="close reveal-group">
       <div class="close__inner">
-        <h2 class="close__line reveal">Spend your time advising. Not administrating.</h2>
-        <a href="#demo" class="btn btn--primary btn--large reveal">Book a demo</a>
+        <h2 class="close__line reveal">From first meeting to fully signed.<br>One connected system.</h2>
+        <p class="close__persona reveal">For principals, advisors and paraplanners.</p>
+        <a href="#cta" class="btn btn--primary btn--large reveal">Book a demo</a>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__col footer__col--left">
         <span class="footer__logo">ClientFlow</span>
-        <p class="footer__tagline">Compliance-grade onboarding infrastructure for IFAs and RIAs.</p>
+        <p class="footer__tagline">Onboarding infrastructure for UK IFAs.<br>Discovery. Documentation. Compliance. Connected.</p>
       </div>
       <nav class="footer__col footer__col--centre" aria-label="Footer">
-        <a href="#capabilities">Capabilities</a>
-        <span class="footer__sep" aria-hidden="true">·</span>
-        <a href="#problem">The problem</a>
+        <a href="#platform">Platform</a>
         <span class="footer__sep" aria-hidden="true">·</span>
         <a href="#how">How it works</a>
         <span class="footer__sep" aria-hidden="true">·</span>
@@ -383,11 +300,11 @@
         <a href="#">Security &amp; compliance</a>
       </nav>
       <div class="footer__col footer__col--right">
-        <a href="#demo" class="btn btn--outline">Book a demo</a>
+        <a href="#cta" class="btn btn--outline">Book a demo</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copyright">© 2025 ClientFlow. All rights reserved.</p>
+      <p class="footer__copyright">&copy; 2025 ClientFlow. All rights reserved.</p>
     </div>
   </footer>
 

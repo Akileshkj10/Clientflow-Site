@@ -1,7 +1,7 @@
 # ClientFlow — Product Requirements Document
-**Version:** 4.1 — IFA/RIA content pivot  
+**Version:** 4.2 — UK IFA positioning  
 **Design reference:** GravityWrite.com (gravitywrite.com)  
-**Output:** Single-page responsive marketing website for ClientFlow AI (wealth management onboarding for IFAs and RIAs)
+**Output:** Single-page responsive marketing website for ClientFlow AI (wealth management onboarding for UK IFAs)
 
 ---
 
@@ -81,29 +81,30 @@ We take GravityWrite's design system and apply it precisely to ClientFlow's cont
 
 ---
 
-## 1.5 Content Strategy — IFA/RIA Pivot (Current)
+## 1.5 Content Strategy — Full Onboarding Infrastructure (Current)
 
-**Effective:** As of site content update. Replaces prior "professional services" positioning.
+**Effective:** As of site revamp. Replaces prior "portal-first" positioning.
 
-**Audience:** Small independent financial advisory (IFA) firms in the UK and Registered Investment Advisor (RIA) firms in the US. Principals, advisors, and paraplanners. Not generic professional services or other verticals.
+**Audience:** Small independent financial advisory (IFA) firms in the UK. Principals, advisors, and paraplanners.
+
+**Core positioning:** ClientFlow is the complete onboarding infrastructure — not just a portal. It covers: client discovery with intake forms, AI meeting notes (online and offline), intelligent document generation with human review, automated follow-ups, a clean client portal (KYC/AML, signing, data protection), FCA compliance, and syncing with Intelliflo.
 
 **Messaging principles:**
-- **Outcome-first:** Lead with time saved (under 3 hours, 20 min review), compliance confidence (Consumer Duty, FCA/SEC), and one connected flow — not "AI" or "automation."
-- **Jargon as trust:** Use IFA/RIA terms: suitability report, fact-find, Consumer Duty, KYC/AML, Copilot, COBS 9.4.1, Wealthbox, Intelliflo. Signals we are built for this audience.
-- **Specificity:** Use PRD stats: 12–15 hours → under 3; 4–6 hrs per suitability → 20 min review; 8–10 tools → 1 system; 70% lose clients to slow onboarding; 84% of small firms with no onboarding software.
-- **Risk reversal:** Emphasise "you approve every draft" (Copilot), "you stay author of the advice," "PI-friendly," "no client-facing AI."
-- **Primary CTA:** "Book a demo" (not "Score my onboarding" as primary). Demo positions the product; optional secondary remains score/assessment if retained elsewhere.
+- **Infrastructure-first:** Lead with the full picture — discovery, documentation, compliance and follow-up in one connected system. Not portal-first, not time-saving-first.
+- **Pain as social proof:** Use real-sounding advisor quotes ("We chased for the fact-find, then for ID…") rather than abstract pain statements.
+- **Jargon as trust:** Suitability report, fact-find, Consumer Duty, KYC/AML, Copilot, Thirdfort, Credas, Wealthbox, Intelliflo.
+- **Risk reversal:** "You approve every draft," "you stay the author of the advice."
+- **No time claims.** No "under 3 hours" or similar.
+- **No generic "CRM."** Always name the tools: Intelliflo, Wealthbox, or "your practice management system."
+- **Primary CTA:** "Book a demo."
 
-**What changed from v4.0:**
-- **Hero:** From generic "Your work is exceptional. Your onboarding isn't" → "From first meeting to fully signed, FCA-compliant onboarding in under 3 hours." Eyebrow: "For UK IFAs and US RIAs." Trust line: Consumer Duty and SEC-ready.
-- **Nav/Footer:** "How it works" / "Who it's for" → "The problem" / "How it works." CTA: "Score my onboarding" → "Book a demo."
-- **Brand strip:** "Professional services firms across the UK" → "Built for small IFA and RIA firms — FCA and SEC in mind from day one." Marquee names updated to IFA-style (e.g. Mitchell Wealth, Patel Financial Planning).
-- **Act 1 (Problem):** Pain points and compare card rewritten for IFA workflow: 12–15 hours, 8–10 tools, 4–6 hrs per suitability, re-entry, Consumer Duty, CRM sync. Compare: 12–15 hrs → under 3 hrs; 4–6 hrs suitability → 20 min review; meeting populates fact-find; Consumer Duty audit trail; Wealthbox/Intelliflo sync. Footer stat: £1,500+ saved per month (4 reports), ~10 hrs for 30 annual reviews.
-- **Act 2 (Transformation):** Pairings and headline updated. "One connected chain" / "Not a CRM. Not a report writer. The operating layer." Four pairings: meeting → fact-find; suitability from connected data + Copilot; Consumer Duty evidence; annual review in ~20 min.
-- **Cost section:** Headline "Onboarding that pays for itself." Cards: (1) £567 saved per suitability report vs manual, (2) £1,468 saved per month (4 reports) vs Practitioner £199/mo, (3) 70% of firms lose clients to slow onboarding. Closer: Practitioner/Growth tiers, no enterprise pricing.
-- **Proof timeline:** "Under 3 hours" flow: portal → transcript + KYC → enrichment + suitability draft → Copilot approve → DocuSeal → CRM synced. Total &lt;3 hrs. CTA: Book a demo.
-- **Offer / Close:** "See how ClientFlow fits your practice." Book a demo; for UK IFAs and US RIAs; Practitioner £199/mo, Growth £399/mo. Close line: "Ready to onboard in under 3 hours instead of 12?"
-- **Footer:** Tagline "Compliance-grade onboarding for IFAs and RIAs. Under 3 hours, not 12." Logo "ClientFlow."
+**Site structure (6 sections, clean flow):**
+- **Hero:** "The onboarding infrastructure for advisory firms." Sub: first meeting to signed engagement — discovery, docs, compliance, follow-up in one system. Three bullets: intake + AI meeting notes; docs from your data, you approve; KYC/AML + FCA evidence + Intelliflo/Wealthbox.
+- **Platform (6 feature cards, 3×2 grid):** (1) Structured client discovery — intake forms; (2) AI meeting notes — any format (in-person, phone, video); (3) Intelligent document generation — firm's practices, you review/approve; (4) Automated follow-ups; (5) Client portal — KYC/AML (Thirdfort, Credas), signing, data protection; (6) Synced with Intelliflo and Wealthbox.
+- **Problem ("Sound familiar?"):** Three blockquote cards with advisor pain quotes. Transition: "ClientFlow replaces the scatter."
+- **How it works (5 vertical steps):** (1) Client completes intake; (2) Meeting captured, fact-find populated; (3) Documents generated, you approve; (4) Client completes KYC and signs; (5) Practice systems updated.
+- **Offer:** "See the full picture." Demo walk-through. For principals, advisors and paraplanners.
+- **Close:** "From first meeting to fully signed. One connected system."
 
 ---
 
