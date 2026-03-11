@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/site.css?v=2">
 </head>
 <body>
   <header class="nav" id="nav" role="banner">
@@ -77,37 +77,6 @@
       </div>
     </section>
 
-    <!-- ── Brand Trust Strip ── -->
-    <section class="brand-strip reveal-group">
-      <p class="brand-strip__label reveal">Built for independent advisory firms — FCA compliant from day one</p>
-      <p class="brand-strip__subtitle reveal">Trusted by advisors at firms like</p>
-      <div class="brand-strip__marquee reveal" aria-hidden="true">
-        <div class="brand-strip__track">
-          <span class="brand-strip__name">Mitchell Wealth</span>
-          <span class="brand-strip__name">Patel Financial Planning</span>
-          <span class="brand-strip__name">Turner Clarke IFA</span>
-          <span class="brand-strip__name">Morrison Partners</span>
-          <span class="brand-strip__name">Henderson Advisory</span>
-          <span class="brand-strip__name">Webb &amp; Co</span>
-          <span class="brand-strip__name">Sinclair &amp; Reid</span>
-          <span class="brand-strip__name">Okafor Wealth</span>
-          <span class="brand-strip__name">Mitchell Wealth</span>
-          <span class="brand-strip__name">Patel Financial Planning</span>
-          <span class="brand-strip__name">Turner Clarke IFA</span>
-          <span class="brand-strip__name">Morrison Partners</span>
-          <span class="brand-strip__name">Henderson Advisory</span>
-          <span class="brand-strip__name">Webb &amp; Co</span>
-          <span class="brand-strip__name">Sinclair &amp; Reid</span>
-          <span class="brand-strip__name">Okafor Wealth</span>
-        </div>
-      </div>
-      <div class="brand-strip__chips">
-        <span class="brand-strip__chip">End-to-end onboarding</span>
-        <span class="brand-strip__chip">Intelliflo &amp; Wealthbox synced</span>
-        <span class="brand-strip__chip">FCA compliant</span>
-      </div>
-    </section>
-
     <!-- ── Platform — What You Get ── -->
     <section class="platform reveal-group" id="platform">
       <div class="platform__inner">
@@ -169,20 +138,23 @@
           <span class="eyebrow-pill reveal">Sound familiar?</span>
           <h2 class="problem__headline reveal">When onboarding is scattered, everyone feels it.</h2>
         </header>
-        <div class="problem__cards">
-          <blockquote class="problem__card reveal">
-            <p class="problem__card-text">"We chased the client for the fact-find, then for ID, then for the signed documents. Three tools, three logins, three email threads."</p>
-          </blockquote>
-          <blockquote class="problem__card reveal">
-            <p class="problem__card-text">"I typed up the meeting notes, then copied them into the suitability template. Then typed them again into Intelliflo."</p>
-          </blockquote>
-          <blockquote class="problem__card reveal">
-            <p class="problem__card-text">"FCA asked for our Consumer Duty evidence. We spent a full day searching drives, emails and filing cabinets."</p>
-          </blockquote>
-        </div>
-        <p class="problem__transition reveal">ClientFlow replaces the scatter. One system — intake through to signed and synced.</p>
+        <div class="problem__body">
+          <div class="problem__left">
+            <div class="problem__cards">
+              <blockquote class="problem__card reveal">
+                <p class="problem__card-text">"We chased the client for the fact-find, then for ID, then for the signed documents. Three tools, three logins, three email threads."</p>
+              </blockquote>
+              <blockquote class="problem__card reveal">
+                <p class="problem__card-text">"I typed up the meeting notes, then copied them into the suitability template. Then typed them again into Intelliflo."</p>
+              </blockquote>
+              <blockquote class="problem__card reveal">
+                <p class="problem__card-text">"FCA asked for our Consumer Duty evidence. We spent a full day searching drives, emails and filing cabinets."</p>
+              </blockquote>
+            </div>
+            <p class="problem__transition reveal">ClientFlow replaces the scatter. One system — intake through to signed and synced.</p>
+          </div>
 
-        <div class="compare reveal">
+          <div class="compare reveal">
           <div class="compare__header">
             <span class="compare__col-title compare__col-title--before">Today</span>
             <span class="compare__col-title compare__col-title--after">With ClientFlow</span>
@@ -211,6 +183,7 @@
           </div>
           <div class="compare__footer">One connected system. Intake through to signed and synced.</div>
         </div>
+        </div><!-- /.problem__body -->
       </div>
     </section>
 
@@ -274,14 +247,6 @@
       </div>
     </section>
 
-    <!-- ── Close ── -->
-    <section class="close reveal-group">
-      <div class="close__inner">
-        <h2 class="close__line reveal">From first meeting to fully signed.<br>One connected system.</h2>
-        <p class="close__persona reveal">For principals, advisors and paraplanners.</p>
-        <a href="#cta" class="btn btn--primary btn--large reveal">Book a demo</a>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">

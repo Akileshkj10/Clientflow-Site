@@ -50,6 +50,33 @@
 })();
 
 /**
+ * Clientflow — Smooth anchor scrolling with nav offset
+ */
+(function () {
+  'use strict';
+
+  var nav = document.getElementById('nav');
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+
+    var hash = link.getAttribute('href');
+    if (!hash || hash === '#') return;
+
+    var target = document.querySelector(hash);
+    if (!target) return;
+
+    e.preventDefault();
+
+    var navHeight = nav ? nav.getBoundingClientRect().height : 0;
+    var top = target.getBoundingClientRect().top + window.scrollY - navHeight - 16;
+
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  });
+})();
+
+/**
  * Clientflow — Scroll reveals (PRD §3.2, Task 13)
  * Trigger: 20% viewport. Opacity 0→1, translateY(24px)→0. 550ms. 80ms stagger (130ms for timeline).
  */
