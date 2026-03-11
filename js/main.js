@@ -1,5 +1,5 @@
 /**
- * Clientflow — Navigation behaviour
+ * Smart Onboard — Navigation behaviour
  * - Scroll border: border appears after 40px scroll (PRD §4)
  * - Mobile hamburger: full-screen overlay (PRD §4)
  */
@@ -50,7 +50,7 @@
 })();
 
 /**
- * Clientflow — Smooth anchor scrolling with nav offset
+ * Smart Onboard — Smooth anchor scrolling with nav offset
  */
 (function () {
   'use strict';
@@ -77,7 +77,7 @@
 })();
 
 /**
- * Clientflow — Scroll reveals (PRD §3.2, Task 13)
+ * Smart Onboard — Scroll reveals (PRD §3.2, Task 13)
  * Trigger: 20% viewport. Opacity 0→1, translateY(24px)→0. 550ms. 80ms stagger (130ms for timeline).
  */
 (function () {
